@@ -12,6 +12,19 @@ from io import BytesIO
 
 # Judul Aplikasi
 st.title("Pengolahan Citra Medika")
+# Inject custom CSS
+st.markdown("""
+    <style>
+        [data-testid="stAppViewContainer"] {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+            color: white;
+        }
+        /* Optional: Adjust text color to stand out */
+        [data-testid="stHeader"] {
+            color: white;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 # Sidebar menu
 with st.sidebar:
