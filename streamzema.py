@@ -7,6 +7,7 @@ from streamlit_option_menu import option_menu
 from skimage.measure import regionprops_table
 from skimage import io, color, measure, img_as_ubyte, feature, filters, exposure
 from fuzzywuzzy import process as prc
+from io import BytesIO
 
 
 # Judul Aplikasi
