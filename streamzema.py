@@ -212,6 +212,10 @@ elif selected == "Feature Extraction":
                 df_new.to_excel(writer, index=False, sheet_name='New Features')
 
             # Tombol unduh untuk file Excel yang baru dibuat
+            st.markdown(
+            f"[⬇️ **DOWNLOAD FEATURES** ⬇️](file_path_here) ",
+            unsafe_allow_html=True
+            )
             with open(excel_path, 'rb') as file:
                 st.download_button(
                     label="Download extracted features as Excel",
