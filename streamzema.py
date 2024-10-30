@@ -23,16 +23,16 @@ if selected == "Home":
     st.subheader("Anggota kelompok")
     group_members = [
         "Farhan Majid - 5023211049",
-        "Leony Purba - 50232110",
-        "Benedicta Sabdaningtyas - 50232110",
-        "Adelia Safira - 50232110"
+        "Leony Purba - 5023211013",
+        "Benedicta Sabdaningtyas - 5023211029",
+        "Adelia Safira - 5023211061"
     ]
     for member in group_members:
         st.markdown(f"<p style='font-family:Georgia; color: black; font-size: 20px;'>{member}</p>", unsafe_allow_html=True)
 
 # Eczema Subacute Page
 elif selected == "Encyclopedia":
-    st.markdown("<h1 style='text-align: center; color: red;'>🫀ENCYCLOPEDIA</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: red;'>LEARN MORE ABOUT ECZEMA📓</h1>", unsafe_allow_html=True)
     questions = [
         ("1. Apa itu Eczema Subacute?", "Eczema subacute adalah bentuk eksim yang ditandai dengan gejala peradangan kulit yang sedang berlangsung, muncul setelah fase akut eksim. Pada tahap ini, gejala yang umum terjadi meliputi rasa gatal yang mengganggu, kemerahan dan pembengkakan pada kulit, kekeringan dan pengelupasan, serta lesi yang dapat mengeluarkan cairan atau membentuk keropeng saat mengering."),
         ("2. Apa gejala umum yang terjadi pada eczema subacute?", "Eczema subacute dapat dipicu oleh berbagai faktor, seperti alergen (serbuk sari atau debu), iritan (deterjen atau sabun), perubahan cuaca yang ekstrem, dan stres emosional. Pengobatan untuk eczema subacute biasanya melibatkan penggunaan krim atau salep kortikosteroid untuk mengurangi peradangan dan gatal, serta pelembap untuk menjaga kelembapan kulit. Penting juga untuk mengidentifikasi dan menghindari alergen atau iritan yang dapat memperburuk kondisi. Jika tidak ditangani dengan baik, eczema subacute dapat berkembang menjadi eczema kronis, sehingga mencari perawatan yang tepat dan mengikuti saran dokter sangatlah penting untuk mengelola gejala dan mencegah kekambuhan."),
