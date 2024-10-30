@@ -1,0 +1,9 @@
+streamlit
+streamlit-option-menu
+scipy
+scikit-image
+openpyxl
+matplotlib
+pandas
+numpy
+fuzzywuzzy
