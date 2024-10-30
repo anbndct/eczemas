@@ -44,15 +44,7 @@ if selected == "Home":
         st.markdown(f"<p style='font-family:Georgia; color: black; font-size: 20px;'>{member}</p>", unsafe_allow_html=True)
 
 # Eczema Subacute Page
-elif selected == "Encyclopedia":
-    st.markdown("""
-        <style>
-            [data-testid="stAppViewContainer"] {
-                background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
-                color: white;
-            }
-        </style>
-        """, unsafe_allow_html=True)
+elif selected == "More About Eczema":
     st.markdown("<h1 style='text-align: center; color: red;'>LEARN MORE ABOUT ECZEMA📓</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; color: red;'>LEARN MORE ABOUT ECZEMA📓</h1>", unsafe_allow_html=True)
     questions = [
