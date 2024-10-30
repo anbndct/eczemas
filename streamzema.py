@@ -260,29 +260,32 @@ elif selected == "Feature Extraction":
         ax3.set_title("Centroid and Orientation of Labeled Regions")
         st.pyplot(fig3)
         
-    # Data Extraction Section
-    elif selected2 == "Data":
-        st.subheader("Extracted Data")
+        # Data Extraction Section
+        elif selected2 == "Data":
+            st.subheader("Extracted Data")
+            
+            # Hitung properti menggunakan regionprops
+            label_img = measure.label(img < filters.threshold_otsu(img))
+            props = regionprops_table(label_img, properties=('centroid', 'orientation', 'major_axis_length', 'minor_axis_length'))
+            df_new = pd.DataFrame(props)
+            st.write("Newly Extracted Features:")
+            st.write(df_new)
 
-        # Calculate properties using regionprops
-        label_img = measure.label(img < filters.threshold_otsu(img))
-        props = regionprops_table(label_img, properties=('centroid', 'orientation', 'major_axis_length', 'minor_axis_length'))
-        df_new = pd.DataFrame(props)
-        st.write("Newly Extracted Features:")
-        st.write(df_new)
+            # Path untuk menyimpan file Excel baru
+            excel_path = r"extract_features.xlsx"  # Simpan di direktori kerja saat ini
 
-        # Save new data to Excel
-        with pd.ExcelWriter(excel_path, mode='a', if_sheet_exists='replace') as writer:
-            df_new.to_excel(writer, index=False, sheet_name='New Features')
+            # Simpan data baru ke Excel (mode 'w' untuk membuat file baru)
+            with pd.ExcelWriter(excel_path, mode='w', engine="openpyxl") as writer:
+                df_new.to_excel(writer, index=False, sheet_name='New Features')
 
-        # Download button for updated Excel file
-        with open(excel_path, 'rb') as file:
-            st.download_button(
-                label="Download updated feature data as Excel",
-                data=file.read(),
-                file_name="extract_features.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )
+            # Tombol unduh untuk file Excel yang baru dibuat
+            with open(excel_path, 'rb') as file:
+                st.download_button(
+                    label="Download extracted features as Excel",
+                    data=file.read(),
+                    file_name="extract_features.xlsx",  # Nama file untuk unduhan
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                )
 
 
 # Eczema Chatbot Page
