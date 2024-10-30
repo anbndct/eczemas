@@ -45,6 +45,15 @@ if selected == "Home":
 
 # Eczema Subacute Page
 elif selected == "Encyclopedia":
+    st.markdown("""
+        <style>
+            [data-testid="stAppViewContainer"] {
+                background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+                color: white;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: red;'>LEARN MORE ABOUT ECZEMA📓</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; color: red;'>LEARN MORE ABOUT ECZEMA📓</h1>", unsafe_allow_html=True)
     questions = [
         ("1. Apa itu Eczema Subacute?", "Eczema subacute adalah bentuk eksim yang ditandai dengan gejala peradangan kulit yang sedang berlangsung, muncul setelah fase akut eksim. Pada tahap ini, gejala yang umum terjadi meliputi rasa gatal yang mengganggu, kemerahan dan pembengkakan pada kulit, kekeringan dan pengelupasan, serta lesi yang dapat mengeluarkan cairan atau membentuk keropeng saat mengering."),
