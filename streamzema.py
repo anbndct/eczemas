@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from streamlit_option_menu import option_menu
 from skimage.measure import regionprops_table
-from skimage import io, color, measure, img_as_ubyte, feature, filters, exposure
-from fuzzywuzzy import process as prc
+from skimage import io, color, measure, img_as_ubyte, feature, filters, exposure, morphology
+from skimage.measure import regionprops_table
 from io import BytesIO
 
 
