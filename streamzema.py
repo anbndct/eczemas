@@ -39,7 +39,7 @@ elif selected == "Encyclopedia":
     ]
     for title, description in questions:
         st.markdown(f"<p style='font-family:Georgia; color:yellow; font-size: 23px; text-align: left;'>{title}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='font-family:Georgia; color:white; font-size: 20px; text-align: justify;'>{description}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-family:Georgia; color:white; background-color: #00008B; font-size: 20px; text-align: justify;'>{description}</p>", unsafe_allow_html=True)
     st.markdown("""<iframe width="560" height="315" src="https://www.youtube.com/embed/fmurdUlmaIg" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>""", unsafe_allow_html=True)
