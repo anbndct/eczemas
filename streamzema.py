@@ -263,7 +263,6 @@ elif selected == "Feature Extraction":
     # Data Extraction Section
     elif selected2 == "Data":
         st.subheader("Extracted Data")
-        excel_path = r"C:\Users\50232\Downloads\extract_features.xlsx"
         
         # Display existing data if available
         if os.path.exists(excel_path):
