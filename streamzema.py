@@ -10,7 +10,7 @@ from fuzzywuzzy import process as prc
 
 
 # Load the image and process it once, making `img` available for all menu options
-image_path = r"C:\Users\50232\Downloads\eczema-subacute-35-NoWM.jpeg"
+image_path = r"eczema-subacute-35-NoWM.jpeg"
 im = io.imread(image_path)
 img = color.rgb2gray(im)  # Convert image to grayscale
 img = img_as_ubyte(img)   # Convert to uint8
