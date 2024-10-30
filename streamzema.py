@@ -263,14 +263,6 @@ elif selected == "Feature Extraction":
     # Data Extraction Section
     elif selected2 == "Data":
         st.subheader("Extracted Data")
-        
-        # Display existing data if available
-        if os.path.exists(excel_path):
-            df_existing = pd.read_excel(excel_path)
-            st.write("Existing Extracted Features:")
-            st.write(df_existing)
-        else:
-            st.info("No existing data found. New data will be created after extraction.")
 
         # Calculate properties using regionprops
         label_img = measure.label(img < filters.threshold_otsu(img))
