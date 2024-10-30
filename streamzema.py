@@ -16,7 +16,7 @@ st.title("Pengolahan Citra Medika")
 st.markdown("""
     <style>
         [data-testid="stAppViewContainer"] {
-            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+            background: linear-gradient(to right, #ff9a9e, #fecfef); /* Pink bright gradient */
             color: white;
         }
         /* Optional: Adjust text color to stand out */
