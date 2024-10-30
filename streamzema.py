@@ -15,7 +15,7 @@ st.title("Pengolahan Citra Medika")
 
 # Sidebar menu
 with st.sidebar:
-    selected = option_menu("Pengolahan Citra Medika",["Home", "Encyclopedia", "Feature Extraction", "Chatbot"], default_index=0)
+    selected = option_menu("Pengolahan Citra Medika",["Home", "More About Eczema", "Feature Extraction", "Chatbot"], default_index=0)
 
 # Home Page
 if selected == "Home":
